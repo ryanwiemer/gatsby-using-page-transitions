@@ -1,10 +1,20 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import posed from "react-pose";
+
+const Section = posed.section({
+  enter: { staggerChildren: 50 }
+});
+
+const P = posed.p({
+  enter: { y: 0, opacity: 1 },
+  exit: { y: 50, opacity: 0, delay: 300 }
+});
 
 export default () => (
-  <div>
+  <Section>
     <h1>About</h1>
-    <p>
+    <P>
       Proin facilisis egestas lorem at fringilla. Pellentesque luctus fermentum
       mi, in vulputate ipsum volutpat mollis. Vestibulum vel imperdiet ex, id
       imperdiet dolor. Sed eros leo, auctor a lacinia eget, volutpat et ex.
@@ -15,24 +25,24 @@ export default () => (
       pretium in. Maecenas sagittis sem ut diam placerat venenatis. Etiam
       placerat semper eleifend. Nullam sed est rhoncus, sagittis orci quis,
       luctus felis.
-    </p>
-    <p>
+    </P>
+    <P>
       In fermentum urna id mi commodo, sed auctor purus molestie. Cras sit amet
       commodo nibh. Pellentesque posuere consectetur fermentum. Cras aliquam
       condimentum tincidunt. Etiam tristique ut arcu ac semper. Pellentesque sit
       amet nunc urna. Fusce blandit malesuada feugiat. Praesent in tincidunt
       nisi. Ut ac lacus nec risus pretium dapibus. Vestibulum nec lectus eros.
       Fusce id enim auctor, tempus ipsum a, maximus lorem.
-    </p>
-    <p>
+    </P>
+    <P>
       Phasellus nec dapibus tellus, eget tempus enim. Donec viverra neque
       tortor, vel interdum libero bibendum a. Sed vulputate turpis luctus tortor
       euismod consequat. Duis quis leo in risus laoreet suscipit non id neque.
       Duis auctor turpis in elit fringilla, eget pellentesque mi sagittis.
       Praesent facilisis nulla semper scelerisque aliquet. Aenean lobortis orci
       mauris, non vulputate eros ultricies et.
-    </p>
-    <p>
+    </P>
+    <P>
       Quisque nec tempor purus. Fusce at odio non risus tempus gravida a quis
       nisi. Nunc malesuada tincidunt ornare. Aliquam ut posuere magna, at
       elementum leo. Sed vestibulum dictum urna, eu mollis quam scelerisque vel.
@@ -40,8 +50,8 @@ export default () => (
       enim, vitae viverra dolor mattis at. Duis fermentum id sem vitae dapibus.
       Cras euismod eget erat in consectetur. Curabitur eget enim malesuada,
       euismod massa a, semper ligula.
-    </p>
-    <p>
+    </P>
+    <P>
       Vestibulum sed euismod purus, hendrerit dictum urna. Aenean consequat,
       ipsum vitae volutpat tempus, dolor tellus placerat nibh, id lobortis purus
       elit non nibh. Ut quis sagittis lorem. Phasellus congue tellus placerat,
@@ -53,8 +63,8 @@ export default () => (
       fringilla, viverra libero. Quisque nec massa eleifend, sagittis arcu sed,
       finibus metus. Nunc tristique leo at nunc tristique mattis. Mauris ut
       tempor mauris.
-    </p>
-    <p>
+    </P>
+    <P>
       Mauris in rhoncus augue, tempus volutpat metus. Etiam ut urna vitae leo
       finibus imperdiet auctor id odio. Cras ac lacinia neque, nec mollis nisl.
       Nulla suscipit mauris mi, nec iaculis eros porta vel. Vivamus vel iaculis
@@ -63,8 +73,8 @@ export default () => (
       nec dolor mauris. Sed ultrices in libero ut euismod. Nullam risus sapien,
       semper vitae magna sed, vestibulum dapibus orci. Aenean cursus leo eget
       dignissim pharetra.
-    </p>
-    <p>
+    </P>
+    <P>
       Etiam ligula quam, semper sit amet massa in, commodo tincidunt ex. Ut a
       cursus lorem, nec condimentum magna. Sed at feugiat ligula. Quisque quis
       ipsum est. Aliquam sit amet placerat metus. Phasellus semper commodo
@@ -73,6 +83,6 @@ export default () => (
       eleifend lacinia a, ullamcorper ut metus. Curabitur condimentum nibh
       vehicula hendrerit ultricies. Donec placerat eros et ligula auctor, eget
       pellentesque purus sodales.
-    </p>
-  </div>
+    </P>
+  </Section>
 );
