@@ -1,4 +1,4 @@
-# gatsb-using-page-transitions
+# gatsby-using-page-transitions
 
 Gatsby example site using page transitions
 
