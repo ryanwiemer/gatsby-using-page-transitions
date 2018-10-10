@@ -8,7 +8,7 @@ export default () => (
       <title>Regular</title>
     </Helmet>
     <section>
-      <h1 style={{ marginTop: "7rem" }}>Regular Content</h1>
+      <h1>Regular Content</h1>
       <p>
         Nunc ultricies ante quam, vel congue urna semper id. In a blandit lorem.
         Integer eros libero, varius at dui efficitur, efficitur iaculis lorem.
