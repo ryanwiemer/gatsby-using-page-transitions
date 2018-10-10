@@ -5,7 +5,12 @@ import Layout from "./src/components/Layout";
 const transitionDelay = 300;
 
 const Transition = posed.div({
-  enter: { opacity: 1, delay: transitionDelay, beforeChildren: true },
+  enter: {
+    opacity: 1,
+    delay: transitionDelay,
+    delayChildren: transitionDelay,
+    beforeChildren: true
+  },
   exit: { opacity: 0 }
 });
 
