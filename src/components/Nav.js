@@ -29,10 +29,10 @@ class Nav extends React.PureComponent {
             <Link to="/">Home</Link>
           </li>
           <li style={{ marginRight: "1em" }}>
-            <Link to="/about/">About</Link>
+            <Link to="/animated/">Animated</Link>
           </li>
           <li>
-            <Link to="/contact/">Contact</Link>
+            <Link to="/regular/">Regular</Link>
           </li>
         </ul>
       </nav>

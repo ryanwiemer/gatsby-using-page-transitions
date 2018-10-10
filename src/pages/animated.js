@@ -6,6 +6,11 @@ const Section = posed.section({
   enter: { staggerChildren: 50 }
 });
 
+const H1 = posed.h1({
+  enter: { y: 0, opacity: 1 },
+  exit: { y: 50, opacity: 0, delay: 300 }
+});
+
 const P = posed.p({
   enter: { y: 0, opacity: 1 },
   exit: { y: 50, opacity: 0, delay: 300 }
@@ -13,7 +18,7 @@ const P = posed.p({
 
 export default () => (
   <Section>
-    <h1>About</h1>
+    <H1>Animated Content</H1>
     <P>
       Proin facilisis egestas lorem at fringilla. Pellentesque luctus fermentum
       mi, in vulputate ipsum volutpat mollis. Vestibulum vel imperdiet ex, id

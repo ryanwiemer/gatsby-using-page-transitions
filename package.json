@@ -4,8 +4,7 @@
   "version": "1.0.0",
   "author": "Ryan Wiemer <https://www.ryanwiemer.com>",
   "dependencies": {
-    "gatsby": "^2.0.20",
-    "gatsby-plugin-layout": "^1.0.3",
+    "gatsby": "^2.0.21",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
