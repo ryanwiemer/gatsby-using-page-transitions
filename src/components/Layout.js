@@ -1,11 +1,9 @@
 import React from "react";
-import Helmet from "react-helmet";
 import Nav from "../components/Nav";
-import "./layout.css";
+import "../styles/style.css";
 
 const Layout = ({ children }) => (
   <>
-    <Helmet />
     <Nav />
     <div
       style={{
