@@ -134,5 +134,13 @@ export default () => (
       enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis.
       Ut felis.
     </p>
+    <img src="https://placekitten.com/500/500" alt="cat" />
+    <img src="https://placekitten.com/500/500" alt="cat" />
+    <img src="https://placekitten.com/500/500" alt="cat" />
+    <img src="https://placekitten.com/500/500" alt="cat" />
+    <img src="https://placekitten.com/500/500" alt="cat" />
+    <img src="https://placekitten.com/500/500" alt="cat" />
+    <img src="https://placekitten.com/500/500" alt="cat" />
+    <img src="https://placekitten.com/500/500" alt="cat" />
   </div>
 );

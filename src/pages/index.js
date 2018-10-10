@@ -56,6 +56,14 @@ const Index = () => (
       Nulla a consequat arcu, vitae malesuada metus. Donec ultrices rutrum
       vehicula. Aliquam erat volutpat.
     </p>
+    <img src="https://placekitten.com/500/500" alt="cat" />
+    <img src="https://placekitten.com/500/500" alt="cat" />
+    <img src="https://placekitten.com/500/500" alt="cat" />
+    <img src="https://placekitten.com/500/500" alt="cat" />
+    <img src="https://placekitten.com/500/500" alt="cat" />
+    <img src="https://placekitten.com/500/500" alt="cat" />
+    <img src="https://placekitten.com/500/500" alt="cat" />
+    <img src="https://placekitten.com/500/500" alt="cat" />
   </div>
 );
 

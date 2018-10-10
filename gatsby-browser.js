@@ -1,14 +1,17 @@
 const transitionDelay = 300;
 
-exports.shouldUpdateScroll = ({ pathname }) => {
-  // // We use a temporary hack here, see #7758
-  if (window.__navigatingToLink) {
+exports.shouldUpdateScroll = ({
+  routerProps: { location },
+  getSavedScrollPosition
+}) => {
+  if (location.action === "PUSH") {
     window.setTimeout(() => window.scrollTo(0, 0), transitionDelay);
   } else {
-    const savedPosition = JSON.parse(
-      window.sessionStorage.getItem(`@@scroll|${pathname}`)
+    const savedPosition = getSavedScrollPosition(location);
+    window.setTimeout(
+      () => window.scrollTo(...(savedPosition || [0, 0])),
+      transitionDelay
     );
-    window.setTimeout(() => window.scrollTo(...savedPosition), transitionDelay);
   }
   return false;
 };
