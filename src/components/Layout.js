@@ -28,7 +28,12 @@ const Layout = ({ children, ...props }) => (
       }}
     >
       <PoseGroup>
-        <Transition key={props.location.pathname}>{children}</Transition>
+        <Transition
+          style={{ background: "papayawhip" }}
+          key={props.location.pathname}
+        >
+          {children}
+        </Transition>
       </PoseGroup>
     </div>
   </>
