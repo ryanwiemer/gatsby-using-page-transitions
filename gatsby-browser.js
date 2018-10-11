@@ -1,27 +1,10 @@
 import React from "react";
-import posed, { PoseGroup } from "react-pose";
 import Layout from "./src/components/Layout";
 
-const transitionDelay = 300;
-
-const Transition = posed.div({
-  enter: {
-    opacity: 1,
-    delay: transitionDelay,
-    delayChildren: transitionDelay,
-    beforeChildren: true
-  },
-  exit: { opacity: 0 }
-});
+const transitionDelay = 350;
 
 export const wrapPageElement = ({ element, props }) => {
-  return (
-    <Layout>
-      <PoseGroup>
-        <Transition key={props.location.key}>{element}</Transition>
-      </PoseGroup>
-    </Layout>
-  );
+  return <Layout {...props}>{element}</Layout>;
 };
 
 export const shouldUpdateScroll = ({

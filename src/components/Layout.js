@@ -1,8 +1,22 @@
 import React from "react";
+import posed, { PoseGroup } from "react-pose";
 import Nav from "../components/Nav";
 import "../styles/style.css";
 
-const Layout = ({ children }) => (
+const transitionDuration = 300;
+const transitionDelay = 350;
+
+const Transition = posed.div({
+  enter: {
+    opacity: 1,
+    transition: { duration: transitionDuration },
+    delay: transitionDelay,
+    beforeChildren: true
+  },
+  exit: { opacity: 0, transition: { duration: transitionDuration } }
+});
+
+const Layout = ({ children, ...props }) => (
   <>
     <Nav />
     <div
@@ -13,7 +27,9 @@ const Layout = ({ children }) => (
         paddingTop: 0
       }}
     >
-      {children}
+      <PoseGroup>
+        <Transition key={props.location.pathname}>{children}</Transition>
+      </PoseGroup>
     </div>
   </>
 );

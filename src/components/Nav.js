@@ -8,6 +8,7 @@ class Nav extends React.PureComponent {
         style={{
           position: "fixed",
           top: 0,
+          left: 0,
           width: "100%",
           zIndex: "999",
           background: "lightgray"
