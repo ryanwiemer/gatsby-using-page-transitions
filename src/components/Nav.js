@@ -32,8 +32,11 @@ class Nav extends React.PureComponent {
           <li style={{ marginRight: "1em" }}>
             <Link to="/animated/">Animated</Link>
           </li>
-          <li>
+          <li style={{ marginRight: "1em" }}>
             <Link to="/regular/">Regular</Link>
+          </li>
+          <li>
+            <Link to="/margin/">Margin</Link>
           </li>
         </ul>
       </nav>
