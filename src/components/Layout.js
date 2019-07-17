@@ -1,42 +1,52 @@
-import React from "react";
-import posed, { PoseGroup } from "react-pose";
-import Nav from "../components/Nav";
-import "../styles/style.css";
+import React from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import Nav from '../components/Nav'
+import '../styles/style.css'
 
-const transitionDuration = 300;
-const transitionDelay = 350;
+const duration = 0.35
 
-const Transition = posed.div({
+const variants = {
+  initial: {
+    opacity: 0,
+  },
   enter: {
     opacity: 1,
-    transition: { duration: transitionDuration },
-    delay: transitionDelay,
-    beforeChildren: true
+    transition: {
+      duration: duration,
+      delay: duration,
+      when: 'beforeChildren',
+    },
   },
-  exit: { opacity: 0, transition: { duration: transitionDuration } }
-});
+  exit: {
+    opacity: 0,
+    transition: { duration: duration },
+  },
+}
 
-const Layout = ({ children, ...props }) => (
+const Layout = ({ children, location }) => (
   <>
     <Nav />
     <div
       style={{
         margin: `60px auto 0`,
         maxWidth: 960,
-        padding: `0 1em 2em`,
-        paddingTop: 0
+        padding: `1em`,
       }}
     >
-      <PoseGroup>
-        <Transition
-          style={{ background: "papayawhip" }}
-          key={props.location.pathname}
+      <AnimatePresence>
+        <motion.main
+          key={location.pathname}
+          variants={variants}
+          initial="initial"
+          animate="enter"
+          exit="exit"
+          id="main"
         >
           {children}
-        </Transition>
-      </PoseGroup>
+        </motion.main>
+      </AnimatePresence>
     </div>
   </>
-);
+)
 
-export default Layout;
+export default Layout

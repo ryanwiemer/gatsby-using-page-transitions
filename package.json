@@ -1,15 +1,13 @@
 {
   "name": "gatsby-using-page-transitions",
   "description": "Gatsby example site using page transitions",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Ryan Wiemer <https://www.ryanwiemer.com>",
   "dependencies": {
-    "gatsby": "^2.0.21",
-    "gatsby-plugin-react-helmet": "^3.0.0",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-helmet": "^5.2.0",
-    "react-pose": "^3.3.6"
+    "framer-motion": "^1.2.4",
+    "gatsby": "^2.13.26",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "keywords": [
     "gatsby"
@@ -20,7 +18,9 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rm -rf public .cache"
+    "clean": "gatsby clean"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
   }
 }
