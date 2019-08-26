@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const RegularPage = () => (
   <>
@@ -49,6 +49,6 @@ const RegularPage = () => (
       Curabitur non condimentum nisi, in mollis nibh.
     </p>
   </>
-)
+);
 
-export default RegularPage
+export default RegularPage;

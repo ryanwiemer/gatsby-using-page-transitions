@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const IndexPage = () => (
   <>
@@ -6,7 +6,7 @@ const IndexPage = () => (
     <p>Simple implementation of page transitions on a Gatsby website.</p>
     <ul>
       <li>
-        <strong>Github Repo:</strong>{' '}
+        <strong>Github Repo:</strong>{" "}
         <a
           href="https://github.com/ryanwiemer/gatsby-using-page-transitions"
           target="_blank"
@@ -16,7 +16,7 @@ const IndexPage = () => (
         </a>
       </li>
       <li>
-        <strong>Animation Library:</strong>{' '}
+        <strong>Animation Library:</strong>{" "}
         <a
           href="https://www.framer.com/motion/"
           target="_blank"
@@ -27,6 +27,6 @@ const IndexPage = () => (
       </li>
     </ul>
   </>
-)
+);
 
-export default IndexPage
+export default IndexPage;

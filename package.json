@@ -1,13 +1,13 @@
 {
   "name": "gatsby-using-page-transitions",
   "description": "Gatsby example site using page transitions",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "author": "Ryan Wiemer <https://www.ryanwiemer.com>",
   "dependencies": {
-    "framer-motion": "^1.2.4",
-    "gatsby": "^2.13.26",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "framer-motion": "^1.6.3",
+    "gatsby": "^2.14.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   },
   "keywords": [
     "gatsby"

@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import Nav from '../components/Nav'
 import '../styles/style.css'
 
-const duration = 0.35
+const duration = 0.5
 
 const variants = {
   initial: {
@@ -40,7 +40,6 @@ const Layout = ({ children, location }) => (
           initial="initial"
           animate="enter"
           exit="exit"
-          id="main"
         >
           {children}
         </motion.main>
